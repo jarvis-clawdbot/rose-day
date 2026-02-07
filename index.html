@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-page">
+    <div class="rose-petals-container" id="petals-container"></div>
+    
+    <div class="landing-content">
+        <div class="rose-decoration left">
+            <div class="rose-stem">
+                <div class="rose-bloom">
+                    <div class="petal p1"></div>
+                    <div class="petal p2"></div>
+                    <div class="petal p3"></div>
+                    <div class="petal p4"></div>
+                    <div class="petal p5"></div>
+                </div>
+                <div class="stem-leaf leaf1"></div>
+                <div class="stem-leaf leaf2"></div>
+            </div>
+        </div>
+        
+        <div class="central-content">
+            <div class="floating-roses" id="floating-roses"></div>
+            
+            <div class="greeting-wrapper">
+                <div class="rose-icon">🌹</div>
+                <h1 class="happy-text">
+                    <span class="letter" style="--i:1">H</span>
+                    <span class="letter" style="--i:2">a</span>
+                    <span class="letter" style="--i:3">p</span>
+                    <span class="letter" style="--i:4">p</span>
+                    <span class="letter" style="--i:5">y</span>
+                    <span class="space"></span>
+                    <span class="letter" style="--i:6">R</span>
+                    <span class="letter" style="--i:7">o</span>
+                    <span class="letter" style="--i:8">s</span>
+                    <span class="letter" style="--i:9">e</span>
+                    <span class="space"></span>
+                    <span class="letter" style="--i:10">D</span>
+                    <span class="letter" style="--i:11">a</span>
+                    <span class="letter" style="--i:12">y</span>
+                </h1>
+                <div class="sparkles" id="sparkles"></div>
+            </div>
+            
+            <p class="sub-greeting">Wishing you a day as beautiful as you are</p>
+            
+            <div class="cta-container">
+                <a href="letter.html" class="enter-btn">
+                    <span class="btn-text">Open Your Gift</span>
+                    <span class="btn-rose">🌹</span>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="rose-decoration right">
+            <div class="rose-stem mirror">
+                <div class="rose-bloom">
+                    <div class="petal p1"></div>
+                    <div class="petal p2"></div>
+                    <div class="petal p3"></div>
+                    <div class="petal p4"></div>
+                    <div class="petal p5"></div>
+                </div>
+                <div class="stem-leaf leaf1"></div>
+                <div class="stem-leaf leaf2"></div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="landing-footer">
+        <p class="signature">Made by Shubham <span class="heart">❤️</span></p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Landing page specific animations
+        document.addEventListener('DOMContentLoaded', () => {
+            createFloatingRoses();
+            createSparkles();
+            animateLetters();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Rose For You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="letter-page">
+    <div class="falling-roses" id="falling-roses"></div>
+    
+    <div class="letter-container">
+        <div class="instruction-text">Click on the rose to reveal your surprise</div>
+        
+        <div class="rose-wrap" id="rose-wrap">
+            <div class="rose-letter" id="rose-letter">
+                <div class="rose-bud">
+                    <div class="bud-petal bp1"></div>
+                    <div class="bud-petal bp2"></div>
+                    <div class="bud-petal bp3"></div>
+                    <div class="bud-center"></div>
+                </div>
+                <div class="rose-stem-long">
+                    <div class="leaf l1"></div>
+                    <div class="leaf l2"></div>
+                    <div class="leaf l3"></div>
+                </div>
+                <div class="click-hint">
+                    <span class="hint-text">Click to open</span>
+                    <div class="hint-arrow">👆</div>
+                </div>
+            </div>
+            
+            <div class="letter-content" id="letter-content">
+                <div class="letter-paper">
+                    <div class="paper-header">
+                        <div class="rose-stamp">🌹</div>
+                        <div class="date-text">Happy Rose Day</div>
+                    </div>
+                    <div class="paper-content">
+                        <p class="salutation">Dear Beautiful Soul,</p>
+                        
+                        <p class="message-text">
+                            On this Rose Day, I wanted to gift you something as timeless and elegant as you are. Just like a rose that blooms with grace and fills the world with its fragrance, you bring warmth and joy to everyone around you.
+                        </p>
+                        
+                        <p class="message-text">
+                            A rose speaks the language of admiration, and today, I send you this virtual rose carrying my deepest appreciation for your kindness, your smile that lights up every room, and the beautiful soul that you are.
+                        </p>
+                        
+                        <p class="message-text">
+                            May your day be filled with the fragrance of happiness, the colors of joy, and the warmth of wonderful moments. You deserve all the roses in the world, and this is just a small token of how special you are.
+                        </p>
+                        
+                        <p class="closing">With warm wishes,</p>
+                        <p class="signature-name">Shubham <span class="rose-sign">🌹</span></p>
+                    </div>
+                </div>
+                
+                <a href="heart.html" class="next-btn">
+                    Continue to More Surprises →
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        <p class="signature">Made by Shubham <span class="heart">❤️</span></p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            createFallingRoses();
+            setupRoseLetter();
+        });
+    </script>
+</body>
+</html>
